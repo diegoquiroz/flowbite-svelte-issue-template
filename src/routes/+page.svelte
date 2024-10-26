@@ -1,5 +1,7 @@
 <script>
-  import { Heading, P, List, Li, Label, MultiSelect } from 'flowbite-svelte';
+  import { Heading, P, List, Li, Label, MultiSelect, Datepicker } from 'flowbite-svelte';
+
+  let twentysix = new Date("2024-10-26T19:47:48.000Z");
 </script>
 
 <div class='p-9'>
@@ -10,6 +12,8 @@
   <Li class="text-2xl">Run `pnpm update` to update dependencies.</Li>
   <Li class="text-2xl">Add your code</Li>
 </List>
+
+<Datepicker value={twentysix} />
 
 </div>
 
